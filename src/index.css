@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Noto Sans", serif;
+  font-style: normal;
+  background-color: #00577c;
+}
+
+.striped-background {
+  background: repeating-linear-gradient(
+      0deg,
+      #00577c,
+      #00577c 25px,
+      #003b64 25px,
+      #003b64 45px
+    ),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="10" y="40" font-size="30" fill="white">★</text></svg>');
+  background-size: 45px 45px, 50px 50px;
+  background-position: 0 0, 10px 10px;
+  background-repeat: repeat, repeat;
+}
+
+.custom-text-stroke {
+  -webkit-text-stroke: 2px black; /* Define a borda */
+  color: white; /* Cor do texto */
+}
+
+.text {
+  color: white;
+  text-transform: uppercase;
+  flex: none;
+  margin-right: 8vw;
+  font-weight: 900;
+  opacity: 70%;
+  -webkit-text-stroke: 3px #003b64;
+  text-shadow: 5px 5px 5px black;
+}
