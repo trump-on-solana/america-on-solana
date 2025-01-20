@@ -6,7 +6,7 @@ import trumpImage from "./imgs/trump.png";
 
 function App() {
   const [notification, setNotification] = useState(false);
-  const contractAddress = "22Xeo6diWfJrScaoVFzgkwzrCByPukK45fdwkJyrpump";
+  const contractAddress = "";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress).then(() => {
